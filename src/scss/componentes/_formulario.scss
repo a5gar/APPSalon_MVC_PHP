@@ -18,11 +18,13 @@
         border: none;
         padding: calc(v.$separacion / 4);
         border-radius: 1rem;
+        width: 100%;
 
         &:disabled {
             background-color: ligten(v.$negro, 30%);
             color: v.$blanco;
             cursor: not-allowed;
+            user-select: none;
         }
     }
 }

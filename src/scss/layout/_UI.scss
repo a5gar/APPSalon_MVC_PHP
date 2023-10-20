@@ -7,18 +7,7 @@
         grid-template-columns: repeat(2, 1fr);
         min-height: 100vh;
 
-        overflow: scroll;
-        overflow-x: hidden;
- 
-        &::-webkit-scrollbar {
-            width: 0.9rem;
-        }
- 
-        &::-webkit-scrollbar-thumb {
-            background-color: rgba(255,255,255, .4);
-            border-radius: 5px;
 
-        }
 
     }
 
@@ -32,13 +21,35 @@
         }
     }
 
-    .app {
-        width: 95%;
-        margin: 0 auto;
-        padding: 3rem 0;
+    .contenido-app {
 
+        @include m.tablet {
 
+            overflow: scroll;
+            overflow-x: hidden;
+     
+            &::-webkit-scrollbar {
+                width: 0.9rem;
+                margin: 4rem;
+            }
+     
+            &::-webkit-scrollbar-thumb {
+                background-color: rgba(255,255,255, .4);
+                border-radius: 5px;
+    
+            }
+        }
+
+        .app {
+            width: 95%;
+            margin: 0 auto;
+            padding: 3rem 0;
+    
+    
+        }
     }
+
+
 }
 
 .barra {
